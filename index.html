@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="./2023-05-03_18-42.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1 id="title">NET<span>FLIX</span></h1>
+        <p id="description">
+          Thank you for signing up at Netflix. Tell us more about your self
+        </p>
+      </header>
+      <main id="form">
+        <form action="./result.html" id="survey-form">
+          <table>
+            <tbody>
+              <tr>
+                <td><label class="box-label" for="name">Name</label></td>
+              </tr>
+              <tr>
+                <td>
+                  <input class="box"
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><label class="box-label"for="age">Age</label></td>
+              </tr>
+              <tr>
+                <td>
+                  <input class="box" type="number" id="age" name="age" placeholder="Age" />
+                </td>
+              </tr>
+              <tr>
+                <td><label class="box-label" for="email">Email</label></td>
+              </tr>
+              <tr>
+                <td>
+                  <input class="box"
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="box-label" for="content">Content type</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input class="box"
+                    type="text"
+                    name="content-type"
+                    id="content"
+                    list="input-content"
+                  />
+                  <datalist id="input-content">
+                    <option value="Series"></option>
+                    <option value="Movies"></option>
+                    <option value="Documantaries"></option>
+                  </datalist>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="seker"> Movie type</label>
+                  <br />
+                  <input type="checkbox" name="comedy" id="comedy" />
+                  <label class="movie-gender" for="comedy">Comedy</label>
+                  <br />
+                  <input type="checkbox" name="action" id="action" />
+                  <label class="movie-gender" for="action">Action</label>
+                  <br />
+                  <input type="checkbox" name="romance" id="romance" />
+                  <label class="movie-gender" for="romance">Romance</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label  for="">Gender</label>
+                  <br />
+                  <input type="radio" name="gender" id="male" />
+                  <label class="movie-gender" for="male">Male</label>
+                  <br />
+                  <input type="radio" name="gender" id="female" />
+                  <label class="movie-gender" for="female">Female</label>
+                  <br />
+                  <input type="radio" name="gender" id="other" />
+                  <label class="movie-gender" for="other">Other</label>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="Feed_back">Feed back</label></td>
+              </tr>
+              <tr>
+                <td>
+                  <textarea
+                  class="box"
+                    name=""
+                    id=""
+                    cols="20"
+                    rows="4"
+                    style="resize: none"
+                    placeholder="Any comment"
+                  ></textarea>
+                </td>
+              </tr>
+              <tr>
+                <td id="button"><button type="submit" id="submit">Send</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
